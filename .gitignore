@@ -1,0 +1,42 @@
+# ===== 大文件 / 二进制（不该入库） =====
+# 本地大语言模型（1.8GB），用户按 README 自行放置
+models/
+llama/
+*.gguf
+*.exe
+!app.ico
+
+# ===== 打包产物 =====
+_pkg_build/
+_pkg_spec/
+_pkg_dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+*.spec
+
+# ===== 用户数据 / 日志 =====
+data/
+logs/
+*.db
+*.log
+_single.log
+
+# ===== 本地启动器（含本机绝对路径，不入库） =====
+launch.vbs
+
+# ===== 临时 / 调试 =====
+_*.py
+_*.txt
+_*.log
+_repro_*
+_smoke_*
+CONTEXT_BACKUP.md
+
+# ===== OS / 编辑器 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
